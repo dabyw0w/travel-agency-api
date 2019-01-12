@@ -17,27 +17,27 @@ import ummto.l3.travelagency.bdd.Hotel;
  * 
  * @author djebarri
  *         <p>
- *         Cette classe permet de renvoyer des r�ponse sous forme de json, apr�s
- *         avoir interroger la bdd pour r�cup�rer les �l�ments n�cessaire
+ *         Cette classe permet de renvoyer des réponse sous forme de json, aprés
+ *         avoir interroger la bdd pour récupérer les éléments nécessaire
  *         </p>
  * 
  *         <p>
  *         l'annotation {@link RestController} permet de rendre accessible cette
- *         classe par appels http (exemple le fait d'acc�der � un site web un
- *         appel http avec la m�thode get est faite) <br/>
- *         l'annotation {@link RequestMapping} permet de lier sp�cifier une url
- *         par laquelle cette classe pour �tre appel� par internet
+ *         classe par appels http (exemple le fait d'accéder à un site web un
+ *         appel http avec la méthode get est faite) <br/>
+ *         l'annotation {@link RequestMapping} permet de lier spécifier une url
+ *         par laquelle cette classe pour étre appelé par internet
  *         </p>
  * 
  *         <p>
  *         le format de retour est le json (javascript objet notation afin
- *         d'�tre utiliser pour l'affichage des r�sultat dans la partie front
+ *         d'étre utiliser pour l'affichage des résultat dans la partie front
  *         (ihm)
  *         </p>
  * 
  *         <p>
  *         <u> Exemple</u> dison que nous avons la classe ci-dessous si nous
- *         cr�eons une m�thode accessible via un appel get � cette url
+ *         créeons une méthode accessible via un appel get sur cette url
  *         <b>/api/toto</b> et qui renvoie un objet de type Foo
  * 
  *         <pre>
@@ -48,7 +48,7 @@ import ummto.l3.travelagency.bdd.Hotel;
  * 
  *         </pre>
  * 
- *         <h3>Alors</h3> Dans la r�ponse nous aurons �a
+ *         <h3>Alors</h3> Dans la réponse nous aurons éa
  * 
  *         <b>
  * 
@@ -72,8 +72,8 @@ public class ApiController {
 			@RequestParam(name = "maxPrix", required = false) String maxPrix,
 			@RequestParam(name = "adresse", required = false) String adresse) {
 		if (!tryParse(minPrix) && !tryParse(maxPrix)) {
-			// erreur de validation les prix doivent �tre des entiers positif
-			throw new ValidationException("001", 400, "le prix min et prix max doivent �tre des entiers positifs");
+			// erreur de validation les prix doivent étre des entiers positif
+			throw new ValidationException("001", 400, "le prix min et prix max doivent être des entiers positifs");
 		}
 
 		if (minPrix == null && maxPrix == null && adresse == null) {

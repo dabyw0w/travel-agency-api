@@ -9,7 +9,7 @@ import ummto.l3.travelagency.objetretour.ErreurGenerique;
 
 /**
  * classe d'interception des exception afin de reformater l'erreur dans un
- * message générique
+ * message gÃ©nÃ©rique
  * 
  * @author djebarri
  *

@@ -11,8 +11,8 @@ import javax.persistence.Table;
 
 /**
  * 
- * @author djebarri classe qui permet de faire la représentation de la table
- *         hotel v
+ * @author djebarri classe qui permet de faire la reprÃ©sentation de la table
+ *         hotel
  *
  */
 @Table(name = "hotel")
